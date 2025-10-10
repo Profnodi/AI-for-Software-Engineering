@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Learning Platform</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <header class="header">
+            <h1>E-Learning Platform</h1>
+            <nav>
+                <button id="homeBtn" class="nav-btn active">Home</button>
+                <button id="coursesBtn" class="nav-btn">My Courses</button>
+            </nav>
+        </header>
+
+        <!-- Home Page -->
+        <div id="homePage" class="page active">
+            <div class="hero">
+                <h2>Welcome to Our Learning Platform</h2>
+                <p>Discover amazing courses and enhance your skills</p>
+            </div>
+            
+            <div class="courses-grid" id="coursesGrid">
+                <!-- Courses will be dynamically loaded here -->
+            </div>
+        </div>
+
+        <!-- Course Detail Page -->
+        <div id="courseDetailPage" class="page">
+            <div class="course-header">
+                <button id="backBtn" class="back-btn">← Back to Courses</button>
+                <h2 id="courseTitle"></h2>
+                <p id="courseDescription"></p>
+                <div class="progress-bar">
+                    <div class="progress-fill" id="progressFill"></div>
+                </div>
+                <span class="progress-text" id="progressText">0% Complete</span>
+            </div>
+
+            <div class="lessons-container">
+                <h3>Course Lessons</h3>
+                <div id="lessonsList">
+                    <!-- Lessons will be dynamically loaded here -->
+                </div>
+            </div>
+
+            <div class="course-actions">
+                <button id="completeBtn" class="complete-btn">Mark Course as Complete</button>
+            </div>
+        </div>
+
+        <!-- My Courses Page -->
+        <div id="myCoursesPage" class="page">
+            <h2>My Courses</h2>
+            <div class="my-courses-grid" id="myCoursesGrid">
+                <!-- Enrolled courses will be displayed here -->
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
